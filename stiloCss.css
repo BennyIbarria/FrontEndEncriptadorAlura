@@ -1,0 +1,159 @@
+.rectanguloPrincipal{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background:#F3F5FC;
+}.rectanguloMuñeco{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 60px;
+    background: #FFFFFF;
+}#msgminusculas{
+    font: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #495057;
+    opacity: 80%;
+    position:absolute;
+    left: 10%;
+    right: 25%;
+    top: 900px;
+    bottom: 0%;
+
+}
+#a{
+    position: absolute;
+    left: 7%;
+    right: 37.43%;
+    top: 15%;
+    bottom: 0%;  
+}
+#b{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 50%;
+}
+#c{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 8.8%;
+    right: 15%;
+    top: 900px;
+    bottom: 0%;
+}
+
+.tituloPrincipal{
+    position:absolute;
+    left: 40%;
+    right: 25%;
+    top: 2%;
+    bottom: 0%;
+}
+footer{   
+    position:absolute;
+    background: #406fae;
+    padding: 40px;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    color: #F3F5FC;
+    width: 1350px;
+    height: 2500px;
+}
+#mensaje{
+    position: absolute;
+    left: 20%;
+    right:15%;
+    top:45%;
+    width: 350px;
+    height: 175px;
+    background:#F3F5FC;
+    border: none;
+}
+#mensaje2{
+    position: absolute;
+    left: 73.5%;
+    right:15%;
+    top:30%;
+    width: 300px;
+    height: 150px;
+    border: none;
+    
+}
+.botonEncriptar{
+    position: absolute;
+    background:#0A3871;
+    height: 67px;
+    width: 328px;
+    left: 100px;
+    top: 920px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px; 
+    font-weight: bold;
+    color: white;
+    border: none;
+    transition: 1s background;
+    cursor: pointer;
+}
+.botonEncriptar:hover{
+    background: rgb(202, 202, 115);
+    color: black;
+}
+.botonDesencriptar{
+    position: absolute;
+    top:920px;
+    left:600px;
+    height: 67px;
+    width: 328px;
+    border-radius: 24px;
+    padding: 24px;
+    gap:8px;
+    background: #D8DFE8;
+    font-weight: bold;
+    color: black;
+    border: none;
+    transition: 1s background;
+    cursor: pointer;
+}
+.botonDesencriptar:hover{
+    background: rgb(202, 202, 115);
+    color: black;
+}
+.botonCopiar{
+    position: absolute;
+    top:920px;
+    left:1050px;
+    height: 67px;
+    width: 328px;
+    border-radius: 24px;
+    padding: 24px;
+    gap:8px;
+    background: #D8DFE8;
+    font-weight: bold;
+    color: black;
+    border: none;
+    transition: 1s background;
+    cursor: pointer; 
+}
+.botonCopiar:hover{
+    background: rgb(202, 202, 115);
+    color: black;
+}
+@media  screen and (max-width: 1400px){
+    html{
+        min-width: 320px;   
+        max-width: 1400px;
+    }
+    body{
+        background:#F3F5FC ;
+    }
+}
+
+
