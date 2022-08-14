@@ -20,9 +20,9 @@
                 <h1 class="tituloPrincipal">Challenge Encriptador Alura</h1>
             </header>
                 <div>
-                    <img id="a" src="D:\Challenge encriptador\Imagena.png">
-                    <img id="b" src="D:\Challenge encriptador\imagenes\MuñecoMuñeco.png">
-                    <img id="c" src="D:\Challenge encriptador\imagenes\VectorExclamacion.png">
+                    <img id="a" src="D:\Encriptador\Imagena.png">
+                    <img id="b" src="D:\Encriptador\imagenes\MuñecoMuñeco.png">
+                    <img id="c" src="D:\Encriptador\imagenes\VectorExclamacion.png">
                 </div>
                     <div class="Principal">
                         <form>
@@ -31,7 +31,7 @@
                         </form>
                         <button onclick="encriptar(),ocultarMuñeco()" class="botonEncriptar"> Encriptar</button>
                         <button onclick="desencriptar()" class="botonDesencriptar"> Desencriptar</button>
-                        <button onclick="copiar()" class="botonCopiar">Copiar</button>
+                        <button onclick="copy()" class="botonCopiar">Copiar</button>
                    </div>
         </body>
         <footer>
@@ -58,10 +58,13 @@
         document.getElementById("mensaje").innerHTML=cadena;
         var msgDesencriptar = document.getElementById("mensaje2").value= " ";       
     }
-    function copiar(){
+    function copy() {
+    let copyText = document.querySelector('#mensaje1');
+    copyText.select();
+    document.execCommand("copy");
+    document.querySelector("#copy").addEventListener("click", copy);
+}
 
 
-    }
-    
     
 </script>
