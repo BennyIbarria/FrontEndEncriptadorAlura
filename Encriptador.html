@@ -1,38 +1,43 @@
 <!DOCTYPE html>
     
-<html lang="esp">
+<html lang="es">
         
 
     <head>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
+        <title>Challenge Encriptador Alura</title>
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="stiloCss.css">
+
 
     </head>
         
         <body>
-            <canvas class="rectanguloPrincipal"></canvas>
-            <canvas class="rectanguloMuñeco" ></canvas>
-            <canvas class="letrasMinusculas" width="205" height="18"></canvas>
-                <b id="msgminusculas">solo letras minusculas y sin acentos</b>
             <header>
-                <h1 class="tituloPrincipal">Challenge Encriptador Alura</h1>
-            </header>
-                <div>
-                    <img id="a" src="D:\Encriptador\Imagena.png">
-                    <img id="b" src="D:\Encriptador\imagenes\MuñecoMuñeco.png">
-                    <img id="c" src="D:\Encriptador\imagenes\VectorExclamacion.png">
-                </div>
-                <div class="Principal">
+                    <div class="fondo">
+                        <canvas class="rectanguloPrincipal"></canvas>
+                        <canvas class="rectanguloMuñeco" ></canvas>
+                        <h1 class="tituloPrincipal">Challenge Encriptador Alura</h1>
+                    </div>          
+                    <div class="Graficos">
+                        <img id="imagena" src="D:\Encriptador\Imagena.png">
+                        <img id="imagenmuñeco" src="D:\Encriptador\imagenes\MuñecoMuñeco.png">
+                        <img id="signoExclamacion" src="D:\Encriptador\imagenes\VectorExclamacion.png">
+                    </div>
+
+                    <div class="Principal">
                         <form>
+                            <b id="msgminusculas">solo letras minusculas y sin acentos</b>
                             <textarea cols="70" rows="10" id="mensaje" placeholder="Capturar solo letras minusculas y sin acentos" required></textarea>
                             <textarea cols="70" rows="10" id="mensaje2" encriptar()></textarea>
                         </form>
                         <button onclick="encriptar(),ocultarMuñeco()" class="botonEncriptar"> Encriptar</button>
                         <button onclick="desencriptar()" class="botonDesencriptar"> Desencriptar</button>
                         <button onclick="copy()" class="botonCopiar">Copiar</button>
-                   </div>
+                    </div>
+            </header>
         </body>
         <footer>
                 <p class="footer">Challenge realizado por José Benito Ibarria Topete</p>
@@ -40,31 +45,30 @@
 </html>
 <script>
 
-    function ocultarMuñeco(){
+         function ocultarMuñeco(){
         document.getElementById("b").style.display = 'none';
-    }
+        }
 
-    function encriptar(){
+        function encriptar(){
         var msgencriptar = document.getElementById("mensaje").value;
         const vocales={'a':'ai','e':'enter','i':'imes','o':'ober','u':'ufat'}
         let cadena = msgencriptar.replace(/[aeiou]/g,i=> vocales[i]);
         document.getElementById("mensaje2").innerHTML=cadena; 
         document.getElementById("mensaje").value= " "; 
         ocultarMuñeco();
-    }
-    function desencriptar(){
+        }
+
+        function desencriptar(){
         var msgDesencriptar = document.getElementById("mensaje2").value;
         let cadena = msgDesencriptar.replace(/ai/g,'a').replace(/enter/g,'e').replace(/imes/g,'i').replace(/ober/g, 'o').replace(/ufat/g, 'u');
         document.getElementById("mensaje").innerHTML=cadena;
         var msgDesencriptar = document.getElementById("mensaje2").value= " ";       
-    }
-    function copy() {
-    let copyText = document.querySelector('#mensaje2');
-    copyText.select();
-    document.execCommand("copy");
-    document.querySelector("#copy").addEventListener("click", copy);
-}
+        }
+        function copy() {
+        let copyText = document.querySelector('#mensaje2');
+        copyText.select();
+        document.execCommand("copy");
+        document.querySelector("#copy").addEventListener("click", copy);
+        }
 
-
-    
 </script>
