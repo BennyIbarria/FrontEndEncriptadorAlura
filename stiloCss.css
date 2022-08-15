@@ -146,14 +146,12 @@ footer{
     background: rgb(202, 202, 115);
     color: black;
 }
-@media  screen and (max-width: 1400px){
-    html{
-        min-width: 320px;   
-        max-width: 1400px;
+@media screen and (max-width: 270px){
+    .rectanguloPrincipal{
+        width: auto;
+        height: auto;
     }
-    body{
-        background:#F3F5FC ;
-    }
+    
 }
 
 
