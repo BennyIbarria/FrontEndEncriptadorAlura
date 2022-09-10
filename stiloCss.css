@@ -1,18 +1,23 @@
-.rectanguloPrincipal{
-    position: relative;
+.encabezado{
+    position: absolute;
     width: 1440px;
     height: 1024px;
-    background:#F3F5FC;
-}.rectanguloMuñeco{
+    background:#5566a7;
+}.cuerpo{
+    background-color: #c7cfed;
+    width: 100%;
+    height: 80%;
+}
+.rectanguloMuñeco{
     position: absolute;
-    width: 440px;
-    height: 944px;
+    width: 420px;
+    height: 750px;
     left: 1000px;
-    top: 60px;
-    background: #FFFFFF;
+    top: 32px;
+    background-color: rgb(227, 219, 208);
 }#msgminusculas{
     font: Inter;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 12px;
     line-height: 18px;
     color: #495057;
@@ -20,16 +25,14 @@
     position:absolute;
     left: 10%;
     right: 25%;
-    top: 900px;
-    bottom: 0%;
-
+    top: 715px;
 }
 #imagena{
-    position: absolute;
-    left: 7%;
+    position: relative;
+    left: 5%;
     right: 37.43%;
-    top: 15%;
-    bottom: 0%;  
+    top: 5%;
+      
 }
 #imagenmuñeco{
     position: absolute;
@@ -44,35 +47,22 @@
     height: 16px;
     left: 8.8%;
     right: 15%;
-    top: 900px;
-    bottom: 0%;
+    top: 715px;
 }
 
 .tituloPrincipal{
     position:absolute;
-    right: 30%;
-    top: 2%;
+    left: 38%;
+    top: 5%;
     font-style: italic;
     font-size: 25px;
     font-weight: bold;
     
 }
-footer{   
-    position:absolute;
-    background: #406fae;
-    padding: 40px;
-    text-align: center;
-    font-size: 25px;
-    font-style: italic;
-    color: #F3F5FC;
-    width: 1350px;
-    height: 2500px;
-}
 #mensaje{
     position: absolute;
-    left: 20%;
-    right:15%;
-    top:45%;
+    left:25%;
+    top:20%;
     width: 350px;
     height: 175px;
     background:#F3F5FC;
@@ -80,8 +70,8 @@ footer{
 }
 #mensaje2{
     position: absolute;
-    left: 73%;
-    top:30%;
+    left: 71%;
+    top:10%;
     width: 300px;
     height: 150px;
     border: none;
@@ -91,9 +81,9 @@ footer{
     position: absolute;
     background:#0A3871;
     height: 67px;
-    width: 328px;
-    left: 100px;
-    top: 920px;
+    width: 250px;
+    left: 110px;
+    top: 715px;
     border-radius: 24px;
     padding: 24px;
     gap: 8px; 
@@ -109,10 +99,10 @@ footer{
 }
 .botonDesencriptar{
     position: absolute;
-    top:920px;
-    left:600px;
+    top:715px;
+    left:420px;
     height: 67px;
-    width: 328px;
+    width: 250px;
     border-radius: 24px;
     padding: 24px;
     gap:8px;
@@ -129,16 +119,16 @@ footer{
 }
 .botonCopiar{
     position: absolute;
-    top:920px;
-    left:1050px;
+    top:715px;
+    left:730px;
     height: 67px;
-    width: 328px;
+    width: 250px;
     border-radius: 24px;
     padding: 24px;
     gap:8px;
-    background: #D8DFE8;
+    background: #0A3871;
     font-weight: bold;
-    color: black;
+    color: white;
     border: none;
     transition: 1s background;
     cursor: pointer; 
@@ -147,14 +137,67 @@ footer{
     background: rgb(202, 202, 115);
     color: black;
 }
-@media screen and(max-width:415px) {
+.contexto{
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    font-size: 14px;
+    font-style: normal, italic;
+    text-align: center;
+}.enfasis{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #F3F5FC;
+}
+footer{  
+    display: block;
+    text-align: center;
+    padding: 3px;
+    background: #c7cfed;
+    color: white;
+    position: relative;
+    top: 785px;
+    margin: 5px;
+    padding: 2px;
+  }
+  address{
+    display: block;
+    font-style: italic;
+  }
+  .git{
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+  }
+  .linkedin{
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+  }
+@media (min-width:1440px) {
     #mensaje2{
         position:absolute;
-        left: 230%;
+        left: 73.5%;
+        top: 20%;
+    }.imagena{
+        position: absolute;
+        left: 5%;
+        right: 37.43%;
+        top: 5%;
     }
-    
 }
-@media screen and (max-width: 480px){
+@media (min-width: 913px) and (max-width:1199px) {
+    #mensaje2{
+    position: absolute;
+    left: 125%;
+}
+}
+@media (min-width: 540px) and (max:912px){
         #mensaje2{
             position: absolute;
             left: 280%;
@@ -163,19 +206,14 @@ footer{
         width: auto; 
     }
 }
-@media screen and (max-width: 920px) {
-        #mensaje2{
-        position: absolute;
-        left: 125%;
-    }
-}
-@media screen and (max-width: 770px) {
+
+@media (min-width:281px) and (max-width:539px) {
     #mensaje2{
     position: absolute;
     left: 125%;
     }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 280px) {
     #mensaje2{
     position: absolute;
     left: 125%;

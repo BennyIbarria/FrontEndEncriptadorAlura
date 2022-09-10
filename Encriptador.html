@@ -1,28 +1,21 @@
 <!DOCTYPE html>
     
 <html lang="es">
-        
-
-    <head>
-
+    <head class="encabezado">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <title>Challenge Encriptador Alura</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="stiloCss.css">
-
-
     </head>
-        
-        <body>
+    <body class="cuerpo">
             <header>
                     <div class="fondo">
-                        <canvas class="rectanguloPrincipal"></canvas>
                         <canvas class="rectanguloMuñeco" ></canvas>
                         <h1 class="tituloPrincipal">Challenge Encriptador Alura</h1>
                     </div>          
                     <div class="Graficos">
-                        <img id="imagena" src="D:\Encriptador\Imagena.png">
+                        <img class="imagena" src="D:\Encriptador\Imagena.png">
                         <img id="imagenmuñeco" src="D:\Encriptador\imagenes\MuñecoMuñeco.png">
                         <img id="signoExclamacion" src="D:\Encriptador\imagenes\VectorExclamacion.png">
                     </div>
@@ -37,15 +30,28 @@
                         <button onclick="desencriptar()" class="botonDesencriptar"> Desencriptar</button>
                         <button onclick="copy()" class="botonCopiar">Copiar</button>
                     </div>
+                    <div class="contexto">
+                        <p>
+                            Capture un texto en minusculas y sin acentos en el area al centro de la pagina despues presione el botón "Encriptar"<br>
+                            su mensaje será encriptado, copie el texto encriptado con el botón "copiar" actualice su navegador y pegue el texto <br>
+                            copiado en el area de texto localizada sobre la imagen del muñeco con lupa, presione "Desencriptar" su texto será<br>
+                            desencriptado.<b class="enfasis">Orgullosamente Alura Latam, Oracle Next Generation Contact One Program!!!</b><br>
+                            
+                        </p>
+                    </div>
             </header>
-        </body>
-        <footer>
-                <p class="footer">Challenge realizado por José Benito Ibarria Topete</p>
-        </footer>
+            <footer>
+                <address>
+                    <p>Hecho por <a href="mailto:topeteplay89@gmail.com">José Benito Ibarria Topete</a><br>
+                    <a href="https://github.com/BennyIbarria" target="_blank"><img class="git" src="imagenes/git.png"></a><a href="https://www.linkedin.com/in/bennyibarr/" target="_blank"><img class="linkedin" src="imagenes/Linkedin.png"></a></p>
+                </address>
+            </footer>
+    </body>
+    
 </html>
 <script>
 
-         function ocultarMuñeco(){
+        function ocultarMuñeco(){
         document.getElementById("b").style.display = 'none';
         }
 
