@@ -197,13 +197,82 @@ footer{
     left: 125%;
 }
 }
-@media (min-width: 540px) and (max:912px){
-        #mensaje2{
-            position: absolute;
-            left: 280%;
-        }
-        .fondo, .tituloPrincipal, .Graficos, .Principal{
-        width: auto; 
+@media (min-width: 540px) and (max-width:912px){
+    .tituloPrincipal{
+        position:absolute;
+        font-size: 16px;
+        left:30%;
+        top: 5%;
+        text-align: center;
+    }
+    .imagena{
+        position: absolute;
+        top: 5%;;
+        left: 5%;
+        width: 23px;
+        height: 30px;
+    }.rectanguloMuñeco{
+        top:15%;
+        width: 35%;
+        height: 54%;
+        left: 60%;
+    }#imagenmuñeco{
+        top: 46%;
+        left: 53%;
+        width: 45%;
+        height: 25%;
+        
+
+    }
+    #mensaje2{
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    width: 50%;
+    height: 150px;
+    margin-top: 15px;
+    }
+    #mensaje{
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        width: 50%;
+        height: 150px;
+    }#msgminusculas{
+        top: 85%;
+        left: 15%;
+
+    }#signoExclamacion{
+        top: 85%;
+        left: 10%;
+    }
+    .botonCopiar{
+        width: min-content;
+        height: min-content;
+        top: 90%;
+        left: 74%;
+        font-size: 10px;
+    }
+    .botonDesencriptar{
+        width: min-content;
+        height: min-content;
+        top: 90%;
+        left: 40%;
+        font-size: 10px;
+        
+    }
+    .botonEncriptar{
+        width: min-content;
+        height: min-content;
+        top: 90%;
+        left: 10%;
+        font-size: 10px;
+    }
+    .rodapie{
+        position: absolute;
+        top: 100%;
+        left: 25%;
+        
     }
 }
 
@@ -281,9 +350,78 @@ footer{
     }
 }
 @media (max-width: 280px) {
+    .tituloPrincipal{
+        position:absolute;
+        font-size: 16px;
+        left:20%;
+        top: 5%;
+        text-align: center;
+    }
+    .imagena{
+        position: absolute;
+        top: 5%;;
+        left: 3%;
+        width: 23px;
+        height: 30px;
+    }.rectanguloMuñeco{
+        display: none;
+        width: 60px;
+        height: 200px;
+        left: 3opx;
+    }#imagenmuñeco{
+        display: none;
+    }
     #mensaje2{
-    position: relative;
-    left: 100%;
+    position: absolute;
+    left: 3%;
+    top: 45%;
+    width: 92%;
+    height: 150px;
+    margin-top: 15px;
+    }
+    #mensaje{
+        position: absolute;
+        top: 15%;
+        left: 3%;
+        width: 92%;
+        height: 150px;
+    }#msgminusculas{
+        top: 85%;
+        left: 10%;
+        font-size: 8px;
+
+    }#signoExclamacion{
+        top: 85%;
+        left: 3%;
+    }
+    .botonCopiar{
+        width: min-content;
+        height: min-content;
+        top: 90%;
+        left: 72%;
+        font-size: 7px;
+    }
+    .botonDesencriptar{
+        width: min-content;
+        height: min-content;
+        top: 90%;
+        left: 35.5%;
+        font-size: 7px;
+        
+    }
+    .botonEncriptar{
+        width: min-content;
+        height: min-content;
+        top: 90%;
+        left: 3%;
+        font-size: 7px;
+    }
+    .rodapie{
+        position: absolute;
+        top: 100%;
+        left: 22%;
+        font-size: 10px;
+        
     }
 }
 
