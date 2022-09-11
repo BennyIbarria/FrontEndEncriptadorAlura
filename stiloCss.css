@@ -27,7 +27,7 @@
     right: 25%;
     top: 715px;
 }
-#imagena{
+.imagena{
     position: relative;
     left: 5%;
     right: 37.43%;
@@ -208,15 +208,81 @@ footer{
 }
 
 @media (min-width:281px) and (max-width:539px) {
+    .tituloPrincipal{
+        position:absolute;
+        font-size: 16px;
+        left:20%;
+        top: 5%;
+        text-align: center;
+    }
+    .imagena{
+        position: absolute;
+        top: 5%;;
+        left: 5%;
+        width: 23px;
+        height: 30px;
+    }.rectanguloMuñeco{
+        display: none;
+        width: 60px;
+        height: 200px;
+        left: 3opx;
+    }#imagenmuñeco{
+        display: none;
+    }
     #mensaje2{
     position: absolute;
-    left: 125%;
+    left: 5%;
+    top: 45%;
+    width: 80%;
+    height: 150px;
+    margin-top: 15px;
+    }
+    #mensaje{
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        width: 80%;
+        height: 150px;
+    }#msgminusculas{
+        top: 85%;
+
+    }#signoExclamacion{
+        top: 85%;
+        left: 20px;
+    }
+    .botonCopiar{
+        width: min-content;
+        height: min-content;
+        top: 90%;
+        left: 250px;
+        font-size: 10px;
+    }
+    .botonDesencriptar{
+        width: min-content;
+        height: min-content;
+        top: 90%;
+        left: 120px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .botonEncriptar{
+        width: min-content;
+        height: min-content;
+        top: 90%;
+        left: 15px;
+        font-size: 10px;
+    }
+    .rodapie{
+        position: absolute;
+        top: 100%;
+        left: 10%;
+        
     }
 }
 @media (max-width: 280px) {
     #mensaje2{
-    position: absolute;
-    left: 125%;
+    position: relative;
+    left: 100%;
     }
 }
 
