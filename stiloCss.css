@@ -233,7 +233,7 @@ footer{
     position: absolute;
     left: 5%;
     top: 45%;
-    width: 80%;
+    width: 88%;
     height: 150px;
     margin-top: 15px;
     }
@@ -241,41 +241,42 @@ footer{
         position: absolute;
         top: 15%;
         left: 5%;
-        width: 80%;
+        width: 88%;
         height: 150px;
     }#msgminusculas{
         top: 85%;
+        left: 15%;
 
     }#signoExclamacion{
         top: 85%;
-        left: 20px;
+        left: 10%;
     }
     .botonCopiar{
         width: min-content;
         height: min-content;
         top: 90%;
-        left: 250px;
+        left: 74%;
         font-size: 10px;
     }
     .botonDesencriptar{
         width: min-content;
         height: min-content;
         top: 90%;
-        left: 120px;
+        left: 40%;
         font-size: 10px;
-        text-align: center;
+        
     }
     .botonEncriptar{
         width: min-content;
         height: min-content;
         top: 90%;
-        left: 15px;
+        left: 10%;
         font-size: 10px;
     }
     .rodapie{
         position: absolute;
         top: 100%;
-        left: 10%;
+        left: 20%;
         
     }
 }
